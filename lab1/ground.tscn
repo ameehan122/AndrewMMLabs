@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://b1ib7qxp75odf"]
+
+[ext_resource type="Texture2D" uid="uid://bvu5gv3p0gnea" path="res://images/green_hill_ground__pixilart__by_lokmenghong560617_dgp7ub3-fullview.png" id="1_6qip3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g6ty7"]
+size = Vector2(1237, 108)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(621.5, 594)
+shape = SubResource("RectangleShape2D_g6ty7")
+
+[node name="GreenHillGroundPixilartByLokmenghong560617Dgp7Ub3-fullview2" type="Sprite2D" parent="."]
+position = Vector2(577, 595)
+scale = Vector2(0.299609, 0.335294)
+texture = ExtResource("1_6qip3")
+
+[node name="GreenHillGroundPixilartByLokmenghong560617Dgp7Ub3-fullview3" type="Sprite2D" parent="."]
+position = Vector2(959, 595)
+scale = Vector2(0.299609, 0.335294)
+texture = ExtResource("1_6qip3")
+
+[node name="GreenHillGroundPixilartByLokmenghong560617Dgp7Ub3-fullview" type="Sprite2D" parent="."]
+position = Vector2(193.25, 595)
+scale = Vector2(0.299609, 0.335294)
+texture = ExtResource("1_6qip3")

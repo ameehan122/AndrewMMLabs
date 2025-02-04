@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://b1a6b8l18u7hh"]
+[gd_scene load_steps=3 format=3 uid="uid://b1a6b8l18u7hh"]
 
 [ext_resource type="Texture2D" uid="uid://cru8buac5kw2i" path="res://images/tails.webp" id="1_dvqlb"]
+[ext_resource type="Script" path="res://scripts/character_body_2d.gd" id="1_v8try"]
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_v8try")
 
 [node name="tails" type="Sprite2D" parent="."]
 scale = Vector2(0.25, 0.25)

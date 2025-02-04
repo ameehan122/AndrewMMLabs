@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://c1kg3gwjqhqu4"]
+
+[ext_resource type="Texture2D" uid="uid://x0mg3lx6sf4v" path="res://images/pWCpE4qpkxXuN1LLsb_8LRLBIhatbnvjipFrn6Jt4bM copy.png" id="1_81h5a"]
+[ext_resource type="Texture2D" uid="uid://yarcweuxj15k" path="res://images/pWCpE4qpkxXuN1LLsb_8LRLBIhatbnvjipFrn6Jt4bM 1.png" id="2_nmery"]
+
+[node name="trees" type="Node2D"]
+
+[node name="PWCpE4QpkxXuN1lLsb8lrlbIhatbnvjipFrn6Jt4bMCopy" type="Sprite2D" parent="."]
+position = Vector2(727.977, 383)
+scale = Vector2(1.29457, 1.29457)
+texture = ExtResource("1_81h5a")
+
+[node name="PWCpE4QpkxXuN1lLsb8lrlbIhatbnvjipFrn6Jt4bM1" type="Sprite2D" parent="."]
+position = Vector2(872.536, 394.75)
+scale = Vector2(1.35714, 1.35714)
+texture = ExtResource("2_nmery")
+
+[node name="PWCpE4QpkxXuN1lLsb8lrlbIhatbnvjipFrn6Jt4bMCopy2" type="Sprite2D" parent="."]
+position = Vector2(959.634, 378.5)
+scale = Vector2(1.3062, 1.3062)
+texture = ExtResource("1_81h5a")
+
+[node name="PWCpE4QpkxXuN1lLsb8lrlbIhatbnvjipFrn6Jt4bM2" type="Sprite2D" parent="."]
+position = Vector2(661.155, 382.25)
+scale = Vector2(1.28378, 1.28378)
+texture = ExtResource("2_nmery")

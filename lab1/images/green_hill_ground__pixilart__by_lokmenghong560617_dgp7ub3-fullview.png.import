@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://sykajhnjih85"
-path="res://.godot/imported/birch_5.png-578e4c3f7ce5fc7438378efcf38e0ac4.ctex"
+uid="uid://bvu5gv3p0gnea"
+path="res://.godot/imported/green_hill_ground__pixilart__by_lokmenghong560617_dgp7ub3-fullview.png-bfa3e97caebf154151e701d38d1c7951.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/birch_5.png"
-dest_files=["res://.godot/imported/birch_5.png-578e4c3f7ce5fc7438378efcf38e0ac4.ctex"]
+source_file="res://images/green_hill_ground__pixilart__by_lokmenghong560617_dgp7ub3-fullview.png"
+dest_files=["res://.godot/imported/green_hill_ground__pixilart__by_lokmenghong560617_dgp7ub3-fullview.png-bfa3e97caebf154151e701d38d1c7951.ctex"]
 
 [params]
 

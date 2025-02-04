@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://drqred1d4aduf"
-path="res://.godot/imported/birch_2.png-b898bda79ff56c1050d2860a26f6e19a.ctex"
+uid="uid://h2eq46xuna80"
+path="res://.godot/imported/lapper-bggreenhill1.jpg-3b007a9ef3cb828252f317727619e1bf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/birch_2.png"
-dest_files=["res://.godot/imported/birch_2.png-b898bda79ff56c1050d2860a26f6e19a.ctex"]
+source_file="res://images/lapper-bggreenhill1.jpg"
+dest_files=["res://.godot/imported/lapper-bggreenhill1.jpg-3b007a9ef3cb828252f317727619e1bf.ctex"]
 
 [params]
 
