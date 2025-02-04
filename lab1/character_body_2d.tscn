@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://b1a6b8l18u7hh"]
+
+[ext_resource type="Texture2D" uid="uid://cru8buac5kw2i" path="res://images/tails.webp" id="1_dvqlb"]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="tails" type="Sprite2D" parent="."]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("1_dvqlb")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(39, 39, -7, 39, -7, 32, -13, 37, -22, 37, -36, 32, -41, 27, -45, 20, -45, 11, -39, 1, -35, -6, -42, -11, -42, -16, -24, -21, -14, -19, -15, -36, -15, -42, 4, -35, 16, -35, 23, -41, 27, -36, 38, -36, 39, -29, 32, -29, 41, -25, 35, -17, 30, -17, 30, -11, 34, -9, 33, -5, 29, -1, 23, 3, 24, 10, 28, 13, 30, 19, 29, 26, 37, 31, 41, 34)

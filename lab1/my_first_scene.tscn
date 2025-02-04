@@ -1,0 +1,52 @@
+[gd_scene load_steps=9 format=3 uid="uid://boboxyh602xe4"]
+
+[ext_resource type="Texture2D" uid="uid://cfk50cbxgj041" path="res://images/birch_6.png" id="2_ap5ep"]
+[ext_resource type="Texture2D" uid="uid://drqred1d4aduf" path="res://images/birch_2.png" id="3_hg5vy"]
+[ext_resource type="Texture2D" uid="uid://qhw7tkvpaygx" path="res://images/birch_4.png" id="4_sdco4"]
+[ext_resource type="Texture2D" uid="uid://sykajhnjih85" path="res://images/birch_5.png" id="5_01l7f"]
+[ext_resource type="Texture2D" uid="uid://q07dc6k3oj18" path="res://images/birch_3.png" id="6_3e6lb"]
+[ext_resource type="PackedScene" uid="uid://b1a6b8l18u7hh" path="res://character_body_2d.tscn" id="6_8noh6"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_5i06l"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cb8ib"]
+size = Vector2(1241, 110)
+
+[node name="world" type="Node2D"]
+
+[node name="player" parent="." instance=ExtResource("6_8noh6")]
+position = Vector2(108, 425)
+
+[node name="trees" type="Node2D" parent="."]
+
+[node name="Birch6" type="Sprite2D" parent="trees"]
+position = Vector2(1006, 513)
+texture = ExtResource("2_ap5ep")
+
+[node name="Birch2" type="Sprite2D" parent="trees"]
+position = Vector2(734, 439)
+texture = ExtResource("3_hg5vy")
+
+[node name="Birch4" type="Sprite2D" parent="trees"]
+position = Vector2(956, 435)
+texture = ExtResource("4_sdco4")
+
+[node name="Birch5" type="Sprite2D" parent="trees"]
+position = Vector2(844, 421)
+texture = ExtResource("5_01l7f")
+
+[node name="Birch3" type="Sprite2D" parent="trees"]
+position = Vector2(1077, 422)
+texture = ExtResource("6_3e6lb")
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Node2D"]
+modulate = Color(0.353655, 0.67324, 0.317627, 1)
+position = Vector2(620.625, 594.625)
+scale = Vector2(1236.75, 107.25)
+mesh = SubResource("QuadMesh_5i06l")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D"]
+position = Vector2(621.5, 596)
+shape = SubResource("RectangleShape2D_cb8ib")
