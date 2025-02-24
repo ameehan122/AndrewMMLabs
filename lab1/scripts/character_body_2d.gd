@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @export var speed = 300.0
 @export var gravity = 30
-@export var jump_force = 300
+@export var jumping = 300
 
 func _physics_process(delta):	
 	if !is_on_floor():
@@ -11,7 +11,7 @@ func _physics_process(delta):
 			velocity.y = 1000
 
 	if Input.is_action_just_pressed("jump"):
-		velocity.y = -jump_force
+		velocity.y = -jumping
 	var horizontal_direction := Input.get_axis("move_left", "move_right")
 	
 	velocity.x = speed * horizontal_direction
