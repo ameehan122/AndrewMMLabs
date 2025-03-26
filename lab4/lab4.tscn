@@ -1,0 +1,49 @@
+[gd_scene load_steps=3 format=3 uid="uid://d1mi8jd3fscd5"]
+
+[ext_resource type="PackedScene" uid="uid://c0avc3t13rg4s" path="res://tails_sonic_the_hedgehog/scene.gltf" id="1_ifjre"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_18ntg"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="container" type="CSGBox3D" parent="."]
+use_collision = true
+size = Vector3(10, 0.1, 10)
+
+[node name="container2" type="CSGBox3D" parent="container"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.60241, 0, 0)
+use_collision = true
+size = Vector3(1, 10, 12)
+
+[node name="container3" type="CSGBox3D" parent="container"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.33406, 0, 0)
+use_collision = true
+size = Vector3(1, 10, 12)
+
+[node name="container4" type="CSGBox3D" parent="container"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.152004, 0, 5.46444)
+use_collision = true
+size = Vector3(1, 10, 12)
+
+[node name="container5" type="CSGBox3D" parent="container"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.110737, 0, -6.23805)
+use_collision = true
+size = Vector3(1, 10, 12)
+
+[node name="scene" parent="." instance=ExtResource("1_ifjre")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.379663, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="scene"]
+shape = SubResource("CapsuleShape3D_18ntg")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.75958, 0)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Camera3D"]
+transform = Transform3D(1, 0, 0, 0, 0.99329, 0.115648, 0, -0.115648, 0.99329, -0.356949, 19.0125, 0)
+visible = false
+light_color = Color(1, 0.176471, 0.0470588, 1)
+light_energy = 3.977
+light_indirect_energy = 16.0
+light_volumetric_fog_energy = 14.495
+light_angular_distance = 24.55
