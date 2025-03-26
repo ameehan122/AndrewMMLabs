@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c0avc3t13rg4s"
-path="res://.godot/imported/scene.gltf-ba8e4b51720f22d229c7452549b71681.scn"
+path="res://.godot/imported/tails.gltf-58372874fcd50f57a33235e95b615d6b.scn"
 
 [deps]
 
-source_file="res://tails_sonic_the_hedgehog/scene.gltf"
-dest_files=["res://.godot/imported/scene.gltf-ba8e4b51720f22d229c7452549b71681.scn"]
+source_file="res://tails_sonic_the_hedgehog/tails.gltf"
+dest_files=["res://.godot/imported/tails.gltf-58372874fcd50f57a33235e95b615d6b.scn"]
 
 [params]
 
