@@ -1,8 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://d1mi8jd3fscd5"]
+[gd_scene load_steps=4 format=3 uid="uid://d1mi8jd3fscd5"]
 
 [ext_resource type="PackedScene" uid="uid://c0avc3t13rg4s" path="res://tails_sonic_the_hedgehog/tails.gltf" id="1_ifjre"]
 [ext_resource type="Script" uid="uid://coqhpvbgeqb1e" path="res://tails_sonic_the_hedgehog/character.gd" id="2_18ntg"]
-[ext_resource type="Script" uid="uid://w0fjhuims7g2" path="res://spring_arm_3d.gd" id="3_ishhd"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_ishhd"]
 
@@ -33,12 +32,21 @@ use_collision = true
 size = Vector3(1, 10, 12)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="container"]
-transform = Transform3D(1, 0, 0, 0, 0.875776, 0.482717, 0, -0.482717, 0.875776, 0, 9.51429, 9.64876)
+transform = Transform3D(0.951819, -0.305483, -0.0268575, 0.278151, 0.823134, 0.495058, -0.129124, -0.478676, 0.868445, -0.766802, 20.1043, 9.74766)
 light_color = Color(1, 0.555, 0.11, 1)
 light_energy = 2.038
 light_indirect_energy = 16.0
 light_volumetric_fog_energy = 14.495
 light_angular_distance = 24.55
+
+[node name="CSGBox3D" type="CSGBox3D" parent="container"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13834, -0.0889866, 6.35444)
+size = Vector3(3.32935, 2.17627, 7.52332)
+
+[node name="CSGPolygon3D" type="CSGPolygon3D" parent="container"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.80307, 0, 6.98156)
+polygon = PackedVector2Array(0, 0, -2.82594, -0.371834, 1, 1, 1, 0)
+depth = 4.37
 
 [node name="Tails" parent="." instance=ExtResource("1_ifjre")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.379663, 0)
@@ -48,11 +56,10 @@ script = ExtResource("2_18ntg")
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0.49641, 0)
 shape = SubResource("CylinderShape3D_ishhd")
 
-[node name="SpringArm3D" type="SpringArm3D" parent="Tails"]
+[node name="Pivot" type="Node3D" parent="Tails"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.379663, 0)
-spring_length = 7.0
-margin = 0.2
-script = ExtResource("3_ishhd")
 
-[node name="Camera3D" type="Camera3D" parent="Tails/SpringArm3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.75958, 0)
+[node name="SpringArm3D" type="SpringArm3D" parent="Tails/Pivot"]
+
+[node name="Camera3D" type="Camera3D" parent="Tails/Pivot/SpringArm3D"]
+transform = Transform3D(-0.920512, 0, 0.390715, 0, 1, 0, -0.390715, 0, -0.920512, 0.226505, 1.28898, -1.91168)
